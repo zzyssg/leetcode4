@@ -9,5 +9,6 @@
         <module name="leetcode_month4" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>
