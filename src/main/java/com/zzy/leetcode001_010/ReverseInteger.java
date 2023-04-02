@@ -1,6 +1,6 @@
 /**
  * @program: leetcode4
- * @description:
+ * @description: 方法： 数学
  * @author: zzy
  * @create: 2023-04-02
  */
