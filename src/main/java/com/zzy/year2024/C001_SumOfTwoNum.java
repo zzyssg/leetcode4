@@ -1,8 +1,6 @@
 package com.zzy.year2024;
 
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 
 /**
@@ -12,7 +10,7 @@ import java.util.Map;
  * @Description 两数之和：给一数组，数字不重复。给一和t，找出和为t的2数的数组下标，并返回
  * @Version 1.0
  */
-public class SumOfTwoNum {
+public class C001_SumOfTwoNum {
     //sol1 双层循环 时间复杂度：O(n^2)  空间复杂度：O(1)
     public int[] twoSum1(int[] nums,int target){
         for (int i = 0; i < nums.length - 1; i++) {
