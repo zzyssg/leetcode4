@@ -41,6 +41,31 @@ public class C002_AddTwoNums {
         return dummyNode.next;
     }
 
+    public ListNode addTwoNum(ListNode n1, ListNode n2) {
+        ListNode headNode = new ListNode(-1);
+        ListNode dummyNode = headNode;
+        int up = 0;
+        int cur = 0;
+        while (n1 != null || n2 != null) {
+            int n1Val = n1 == null ? 0 : n1.val;
+            int n2Val = n2 == null ? 0 : n2.val;
+            cur = (n1Val + n2Val + up) / 10;
+            up = (n1Val + n2Val + up) % 10;
+            ListNode curNode = new ListNode(cur);
+            headNode.next = curNode;
+            headNode = headNode.next;
+            n1 = n1 == null ? null : n1.next;
+            n2 = n2 == null ? null : n2.next;
+        }
+        if (up != 0) {
+            ListNode lastNode = new ListNode(up);
+            headNode.next = lastNode;
+            headNode = headNode.next;
+        }
+        return dummyNode.next;
+
+    }
+
 
 
 }
